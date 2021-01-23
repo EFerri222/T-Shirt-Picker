@@ -8,21 +8,29 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <h1>T-Shirt Color Picker</h1>
 
     <div class="container">
-        <div id="left">
-            <h2>Colors Left:</h2>
-            <ul id="colors-left"></ul>
+        <h1>T-Shirt Color Picker</h1>
+
+        <main>
+            <section id="left">
+                <h2>Colors Left:</h2>
+                <ul id="colors-left"></ul>
+            </section>
+            <section id="right">
+                <canvas id="canvas" width="350em" height="350em"></canvas>
+            </section>
+        </main>
+    
+        <div class="row">
+            <button id="get-color-btn" onclick="getColor()">Get Random Color</button>
+            <button onclick="washClothes()">Wash Clothes</button>
         </div>
-        <div id="right">
-            <canvas id="canvas" width="350em" height="350em"></canvas>
+    
+        <div>
+            <div id="picked-color"></div>
         </div>
     </div>
-
-    <button id="get-color-btn" onclick="getColor()">Get Random Color</button>
-    <button onclick="washClothes()">Wash Clothes</button>
-    <div id="picked-color"></div>
 
     <script src="main.js"></script>
 </body>
