@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Color Picker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>T-Shirt Color Picker</h1>
+
+    <div class="container">
+        <div id="left">
+            <h2>Colors Left:</h2>
+            <ul id="colors-left"></ul>
+        </div>
+        <div id="right">
+            <canvas id="canvas" width="350em" height="350em"></canvas>
+        </div>
+    </div>
+
+    <button id="get-color-btn" onclick="getColor()">Get Random Color</button>
+    <button onclick="washClothes()">Wash Clothes</button>
+    <div id="picked-color"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
