@@ -1,14 +1,11 @@
 body {
+    text-align: center;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    line-height: 1;
 }
 
 button {
     margin-bottom: 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
     background: none;
     border: 2px solid;
     padding: 1em 2em;
@@ -32,67 +29,39 @@ button:disabled {
     cursor: not-allowed;
 }
 
-h1, h2 {
-    flex-basis: 100%;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+canvas {
+    height: 30vh;
 }
 
-main {
+h2 {
+    font-size: 1.5rem;
+}
+
+li {
+    display: inline;
+    font-size: 0.7rem;
+}
+
+div.col-3 {
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%;
     justify-content: center;
-    height: 70vh;
-}
-
-section {
-    flex-basis: 100%;
-    flex-wrap: wrap;
+    align-items: center;
+    line-height: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 ul {
     padding-left: 0;
-    list-style-type: circle;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
+.grid {
+    border: 1px solid black;
 }
 
-#left {
-    display: flex;
-    flex: 1;
-}
-
-#right {
-    display: flex;
-    flex: 1;
+#colors-left {
+    height: 30vh;
 }
 
 #picked-color {
-    font-size: 3rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-@media (max-width: 768px) {
-    ul {
-        padding-left: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    h1 {
-        font-size: 1.5em;
-    }
-    h2 {
-        font-size: 1.2em;
-    }
-    #picked-color {
-        font-size: 2rem;
-    }
+    font-size: 2rem;
 }

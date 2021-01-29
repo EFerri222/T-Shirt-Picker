@@ -143,7 +143,7 @@ function showColorsLeft() {
     colorsLeftDisplay.innerHTML = "";
     // ...then add an li for each remaining color in the array
     for(var i = 0; i < colorsLeft.length; i++) {
-        colorsLeftDisplay.innerHTML += "<li>" + colorsLeft[i].name + "</li>";
+        colorsLeftDisplay.innerHTML += "<div class=col-3>" + "<li>" + colorsLeft[i].name + "</li>";
     }
 }
 
